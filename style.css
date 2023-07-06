@@ -57,16 +57,23 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    font-size: 2.5rem;
+}
+
+ul > li:hover {
+    text-decoration: underline;
 }
 
 nav {
     display: none;
     position: fixed;
+    z-index: 100;
     top: 0;
     bottom: 0;
     padding: 3rem;
     background-color: rgba(254, 254, 254, 0.5); /* Adjust the color and opacity as needed */
-    backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
+    backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+    box-shadow: 3px 0px 5px #1F35F9;
 }
 
 #me:hover{
@@ -82,6 +89,7 @@ nav {
 }
 
 .menu {
+    cursor: pointer;
     position: fixed;
     top: 1rem;
     left: 1em;
@@ -210,19 +218,14 @@ nav {
     flex-wrap: wrap;
 }
 
-.tool-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 2rem;
-    font-size: 1.4rem;
-}
-
 .section-title {
     padding: 3rem 0;
     text-align: center;
     padding-left: var(--section-title-padding);
+}
+
+.projects > h2 {
+    padding-top: 15vh;
 }
 
 .project-wrapper{
@@ -234,21 +237,23 @@ nav {
 
 .content-wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .content-img-title{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
 }
 
 .content-img-title p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-.content-wrapper.negative{
-    margin-top: -3rem;
-}
+
 
 .content-img {
     height: auto;
@@ -274,6 +279,21 @@ nav {
     height: 100%;
     object-fit: cover;
 } */
+
+#experience {
+    padding: 5rem;
+    height: 80vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    background: rgb(198,196,196);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(242, 242, 242) 51%, rgb(255, 255, 255) 100%);
+}
+
+#experience img {
+    height: 100%;
+    width: 100%;
+}
 
 
 
@@ -326,6 +346,18 @@ nav {
 @media(max-width: 1000px) {
     body {
         cursor: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .ability {
+       padding-top: 15vh;
+    }
+    #experience {
+        height: 50vh;
+    }
+    #experience img {
+        width: 80vw;
     }
 }
 
