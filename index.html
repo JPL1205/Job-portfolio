@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LÊO</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <!-- svg -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <span class="material-symbols-outlined">
+    <span class="material-symbols-outlined menu">
         menu
     </span>
     <div id="name-logo"><img src="assets/name-logo.svg" alt=""></div>
@@ -25,48 +26,58 @@
             </p>
         </div>
         <div class="hero-intro">
-            <h2>I’M A <br>
+            <h2 class="intro">I’M A <br>
                 FULL-STACK WEB <br> DEVELOPER <br>
                 SEEKING FOR AN <br>OPPORTUNITY IN THE <br>
                 INDUSTRIES
             </h2>
-            <img src="assets/colorcloth.png" alt="" style="opacity: 0.95;">
+            <img src="assets/colorcloth.png" alt="" style="opacity: 0.95;" id="me">
         </div>
     </div>
 
-    <div class="skill">
-        <div class="skill-header">
-            <h2 >WHAT ABOUT MY SKILLS</h2>
-            <div class="wrapper">
-                <div class="card">
-                    <h3>FRONT-END</h3>
-                    <div class="tool-container">
-                        <div class="tool">Javascript</div>
-                        <div class="tool">HTML & CSS</div>
-                        <div class="tool">ReactJS</div>
-                        <div class="tool">Figma</div>
-                        <div class="tool">Webpack</div>
-                    </div>
-                        
-                </div>
-                <div class="card">
-                    <h3>BACK-END</h3>
-                    <div class="tool-container">
-                        <div class="tool">NodeJS</div>
-                        <div class="tool">MongoDB</div>
-                        <div class="tool">SQL</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>PROGRAMMING</h3>
-                    <div class="tool-container">
-                        <div class="tool">Python</div>
-                        <div class="tool">Java</div>
-                    </div>
-                </div>
+    <section class="ability">
+        <div class="ability-wrapper" id="ability1">
+            <div class="skill">
+                <div>frontend / design</div>
+                <div><span class="material-symbols-outlined expand">
+                    expand_more
+                </span></div>
+            </div>
+            <div class="language"> 
+                <div>JavaScript</div>
+                <div>HTML & CSS</div>
+                <div>React.js</div>
+                <div>JavaScript</div>
+                <div>Figma</div>
+                <div>Spline</div>
+                <div>PhotoShop</div>
             </div>
         </div>
-    </div>
+        <div class="ability-wrapper" id="ability2">
+            <div class="skill">
+                <div>backend</div>
+                <div><span class="material-symbols-outlined expand">
+                    expand_more
+                </span></div>
+            </div>
+            <div class="language">
+                <div>NodeJS</div>
+                <div>PostgreSQL</div>
+                <div>MongoDB</div>
+            </div>
+        </div>
+        <div class="ability-wrapper" id="ability3">
+            <div class="skill">
+                <div> programming</div>
+                <div><span class="material-symbols-outlined expand">
+                    expand_more
+                </span></div>
+            </div>
+            <div class="language">
+                <div>Python</div>
+                <div>Java</div>
+            </div>
+    </section>
 
     <div class="projects">
         <h2 class="section-title">PROJECTS</h2>
