@@ -6,8 +6,26 @@ const pageLoadEffect = (function(){
         intro.classList.add('intro-transition-effect');
         me.classList.add('me-transition-effect')
     });
-
 })();
+
+const navigation = (function() {
+    const menu = document.querySelector('.menu');
+    const navbar = document.querySelector('nav');
+    const body = document.querySelector('body');
+  
+    menu.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent click event from reaching the body element
+      navbar.style.display = "block";
+    });
+  
+    body.addEventListener('click', () => {
+      navbar.style.display = "none";
+    });
+  
+    console.log(navbar);
+  })();
+  
+
 
 
 const expand = (function(){
